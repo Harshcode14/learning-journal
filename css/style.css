@@ -1,0 +1,303 @@
+*{
+     box-sizing: border-box;
+}
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.25em;
+    background-color: white;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width:1.5em;
+    margin-right:.125em;
+}
+header h1{
+    font-size:.875rem;
+     font-family: "Roboto", sans-serif;
+     margin:0;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    font-weight:600;
+    font-size: .75rem;
+    color:#090909;
+    text-transform: uppercase;
+    margin-left:2em;
+}
+.journal-description{
+    padding:1.25em;
+    color:#151515;
+    margin-top:1em;
+}
+.journal-time{
+    font-size: .75rem;
+}
+.journal-description h2{
+    font-size: 2rem;
+    margin-top:0.5em;
+    margin-bottom:0;
+}
+.journal-description p{
+    font-size: 1rem;
+    margin-bottom:1.5em;
+}
+.journal-description h3{
+    font-size: 1rem;
+    margin-top:1.5em;
+    margin-bottom: 1.5em;
+}
+.journal-img{
+    width:100%;
+   height:40vh;
+    object-fit: cover;
+    color:rgba(0, 0, 0, .5);
+    object-position: 0% 66%;
+    filter: brightness(70%);
+}
+.journal{
+     text-decoration: none;
+}
+.center{
+    font-weight: 700;
+    display: block;
+    font-size: 1rem;
+    margin-bottom:0;
+    margin-top: 0;
+    text-align:center;
+}
+.about-description,.user-description{
+    padding:1.25em;
+}
+.user-description img{
+    width:182px;
+    height:182px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.user-description h2{
+    font-size:2.17rem;
+    margin-bottom:.5em;
+}
+.user-description p,.about-description p{
+    font-size:1rem;
+    margin-top:1.25em;
+    margin-bottom:1.5em;
+}
+.about-description h3{
+    margin-top: 0;;
+}
+.new-journal{
+    background: url("/images/newjournal.png");
+    background-color:rgba(0, 0, 0, .5);
+    background-blend-mode:multiply;
+    background-position: bottom;
+    background-size: cover;
+    color:#FFFFFF;
+    padding: 1em;
+    height:77vh;
+    display:flex;
+    align-items: flex-end;
+}
+.new-journal time{
+    font-size: .75rem;
+}
+.new-journal h2{
+    font-size: 2rem;
+    margin-top: .5em;
+    margin-bottom:.25em;
+}
+.new-journal p{
+    font-size: 1rem;
+    margin:0 ;
+    max-width:620px;
+}
+
+.recent-post{
+    display:grid;
+    gap:1em;
+    grid-template-columns: .25em 1fr .25em;
+    grid-template-areas:
+    ". . ."
+    ". . ." 
+    ". a ."
+    ". b ."
+    ". c ."
+    ". d ."
+    ". e ."
+    ". f ."
+    ;
+    
+}
+.blog-one{
+    grid-area:a;
+}
+.blog-two{
+    grid-area:b;
+}
+.blog-three{
+    grid-area:c;
+}
+.blog-four{
+    grid-area:d;
+}
+.blog-five{
+    grid-area:e;
+}
+.blog-six{
+    grid-area:f;
+}
+
+
+.recent-post img{
+    display:block;
+    width:100%;
+    margin-bottom:1em;
+    height:232px;
+    object-fit: cover;
+}
+.recent-post time{
+    text-transform: uppercase;
+    font-size:.874rem;
+    color:#000000;
+}
+.recent-post h3{
+    font-size: 1.5rem;
+    color:#141414;
+    margin-top:.5em;
+    margin-bottom:.5em;
+}
+.recent-post p{
+    font-size: 1rem;
+    color:#505050;
+}
+
+
+.view-more{
+    display:block;
+    margin:0 auto 2.5em;
+    font-size:1rem;
+    color:#000000;
+    border:0;
+    background: white;
+    font-weight:bold;
+    text-decoration: underline;
+}
+footer{
+    background-color:#202020;
+    text-align:center;
+    padding: 2.375em;
+     width:100%;
+}
+.foot{
+    color:#ECECEC;
+    font-weight:700;
+    margin:0;
+}
+.copyright{
+    color:#D7D7D7;
+    margin-top:.25em;
+    margin-bottom:0;
+}
+.foot,.copyright{
+    font-size:.75rem;
+}
+@media(min-width:1024px){
+    body{
+        background-color: #FAFAFA;
+    }
+    header{
+        padding:1.5em 3.3125em;
+    }
+    .logo{
+        width:2.125em;
+    }
+     header h1{
+        font-size: 1.25em;
+     }
+     nav a{
+        font-size: 1em;
+     }
+    
+    .new-journal{
+        background-position:0% 70%;
+        height:57vh;
+    display:flex;
+    align-items: flex-end;
+    padding:3em;
+    }
+    .new-journal h2{
+        font-size: 2.5rem;
+    }
+    .new-journal time{
+    font-size: 1rem;
+}
+    
+ .recent-post{
+     
+    grid-template-columns: 1.75em 1fr 1fr 1fr 1.75em;
+    gap:1.5em;
+    background-color: #FAFAFA;
+    grid-template-areas: 
+    ". . . . ."
+    ". . . . ."
+    ". a b c ."
+    ". d e f ."
+    ". . . . .";
+ }
+ .journal-description{
+    padding: 3em 7.56em 2em;
+ }
+ 
+ .journal-img{
+   width:90vw;
+   height:60vh;
+   margin-left: -70px;
+   margin-bottom: 2rem;
+ }
+ .journal-description h2{
+    font-size:2.25rem;
+ }
+ .journal-description h3{
+    font-size: 1.5rem;
+    margin: 0;
+ }
+ .journal-description p{
+    font-size: 1.125rem;
+   margin:1.5em 0;
+ }
+ .journal-time{
+    font-size: 1rem;
+ }
+ .center{
+    font-size: 1.5rem;
+    margin-top: 0;
+ }
+ .user-description{
+    display:grid;
+    padding:3.3125em;
+    gap:2em;
+    grid-template-columns: 181px 1fr;
+ }
+  .about-description{
+    padding:0 7.57em;
+  }
+ .about-description h3{
+    font-size: 1.25rem;
+ }
+    
+}
